@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Predicting Keystrokes</title>
+    <link href="/css/tailwind.css" rel="stylesheet"/>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/src/assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/src/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+
+  <body class="font-lato text-black bg-grey-lighter antialiased leading-tight">
+    <script type="module" src="/src/main.js"></script>
+    <div class="bg-img">
+      <div class="container lg:max-w-screen-l mx-auto px-6 md:px-20 lg:px-56 py-8 md:py-24">
+        <a href="/index.html">
+          <div class="flex mb-12 md:mb-6 gap-2 justify-center md:justify-start">
+            <h2 class="text-white">sam<span class="text-blue-light">william</span>ellis<span class="text-blue-light">.com</span></h2>
+            <svg class="h-4 w-4 stroke-current text-white my-auto" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 0 1-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/>
+            </svg>
+          </div>
+        </a>
+        <h1 class="text-white text-4xl lg:text-6xl font-bold mb-12 md:mb-10 text-center md:text-left">Predicting Keystrokes using an Audio Side-Channel Attack and Machine Learning</h1>
+
+        <div class="min-w-xl sm:flex flex-col md:flex-row gap-4 mx-8 md:mx-0">
+          <a href="/src/files/research_thesis.pdf" target="_blank" class="no-underline">
+            <button class="w-full md:w-52 bg-indigo hover:bg-indigo-light uppercase text-white font-bold tracking-wide px-6 py-3 rounded overflow-hidden mb-8 md:mb-0">Download Paper</button>
+          </a>
+          <a href="https://github.com/sam4llis" class="no-underline">
+            <button class="w-full md:w-52 bg-indigo hover:bg-indigo-light uppercase text-white font-bold tracking-wide px-6 py-3 rounded overflow-hidden mb-8 md:mb-0">View Code</button>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mx-auto px-6 md:px-20 lg:px-56 py-12 mb-12">
+      <p class="text-l sm:text-xl leading-normal mb-8">For my MSc Computer Science research project, I studied the feasibility of an audio side-channel attack regarding ‘keystroke snooping’, in which an attack can utilise the emanation of a keystroke to predict a specific key (or passage of keys) being pressed.</p>
+      <div class="img-flowchart w-full hidden md:block md:h-56 bg-contain mb-8 bg-no-repeat bg-center"></div>
+      <p class="text-l sm:text-xl leading-normal mb-6">A novel attack was presented in this research, which used cross-prediction techniques on a stereo array of microphones to increase keystroke recovery rate by 15% when compared to previous research papers. It was shown from my research that key classification using a cross-predicted Random Forest model can achieve up to 89% keystroke recovery rate from a 40-key classification problem. User experiments were also conducted, showing results as high as 85% keystroke recovery from contextual arguments typed by the user. In all cases, a combination of Mel-Frequency Cepstral Coefficients (MFCCs) and Time-Difference of Arrival (TDoA) features were used as input features for the Random Forest classification model.</p>
+    <p class="text-l sm:text-xl leading-normal mb-6">You can <a href="../src/files/research_thesis.pdf" target="_blank" class="text-indigo-dark">download my research thesis</a> for a detailed overview of the processes used to recover and predict keystrokes. My <a href="https://github.com/sam4llis" class="text-indigo-dark">GitHub</a> includes the Python code used to create the keystroke separation and classification algorithms, which were used to produce the results in the research paper.</p>
+    </div>
+
+
+  </body>
+</html>
